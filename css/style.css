@@ -1,0 +1,241 @@
+/* --------------colors------------- */
+
+:root {
+  --bg-color: #fefefe;
+  --second-bg-color: #ffe550;
+  --main-color: #2c2c2c;
+  --accent-color: #bbf330;
+  --extra-color: #7eb101;
+}
+
+/* ---------------general------------ */
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+
+  background-color: var(--bg-color);
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.link:hover,
+.link:focus,
+.link.current {
+  color: var(--accent-color);
+}
+
+.btn {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.5;
+
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: var(--second-bg-color);
+}
+
+/* ----------------header------------- */
+
+.header {
+}
+.logo {
+}
+.nav {
+}
+.nav-list {
+}
+
+.nav-item {
+  font-size: 14px;
+  line-height: 1.14;
+}
+
+.nav-btn,
+.hero-btn {
+  width: 98px;
+  height: 32px;
+  background-color: var(--accent-color);
+  border-style: none;
+  border-radius: 30px;
+}
+
+/* ----------------main------------------- */
+
+.main {
+}
+
+/* -------hero----- */
+
+.hero {
+}
+.hero-title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.2;
+}
+.hero-text {
+}
+.hero-img {
+}
+
+/* -------about----- */
+
+.about {
+  background-color: var(--second-bg-color);
+}
+.about-title {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.2;
+}
+.about-img {
+}
+.about-text {
+}
+.about-list {
+}
+.about-item {
+}
+.item-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.4;
+}
+.item-text {
+  font-size: 14px;
+  line-height: 1.5;
+}
+.about-btn {
+  width: 106px;
+  height: 40px;
+  background-color: var(--bg-color);
+
+  border: 2px;
+  border-radius: 30px;
+  border-color: var(--extra-color);
+  border-style: solid;
+}
+
+/* -------favorites----- */
+
+.favorites {
+}
+.favorites-title {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.16;
+  text-align: center;
+}
+.favorites-tetx {
+  text-align: center;
+}
+.favorites-list {
+}
+.favorites-item {
+}
+.favorites-img {
+}
+
+/* -------reviews----- */
+
+.reviews {
+}
+.reviews-title {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.16;
+}
+.reviews-text {
+}
+.reviews-list {
+}
+.reviews-item {
+}
+.item-review-text {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.16;
+}
+.item-title {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.item-text {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* -------subscribe----- */
+
+.subscribe {
+}
+.subscribe-title {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.2;
+}
+.subscribe-text {
+}
+.subscribe-btn {
+  width: 103px;
+  height: 42px;
+  background-color: var(--accent-color);
+  border-style: none;
+  border-radius: 30px;
+}
+
+.subscribe-img {
+}
+
+/* ----------------footer------------------- */
+
+.footer {
+}
+.footer-logo {
+}
+.footer-nav-list {
+}
+.nav-item {
+}
+.footer-title {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.footer-btn {
+  width: 103px;
+  height: 42px;
+  background-color: var(--bg-color);
+
+  border: 0.85px;
+  border-radius: 30px;
+  border-color: var(--extra-color);
+  border-style: solid;
+}
+.footer-tetx {
+  font-size: 12px;
+  line-height: 1.16;
+}
+.footer-subscrible {
+}
+.footer-item {
+  font-size: 12px;
+  line-height: 1.16;
+  color: var(--extra-color);
+  text-decoration-line: underline;
+}
