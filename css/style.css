@@ -125,8 +125,101 @@ ul {
   background-color: var(--second-bg-color);
 }
 
-/* ----------------main------------------- */
+/* -------modal----------- */
 
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background: rgba(94, 99, 99, 0.7);
+
+  opacity: 1;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 458px;
+  height: 449px;
+  padding: 32px;
+
+  background-color: var(--second-bg-color);
+  border-radius: 30px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+}
+
+.modal-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.16;
+  text-align: center;
+}
+.modal-btn-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+
+  width: 32px;
+  height: 32px;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--bg-color);
+  box-shadow: rgba(0, 0, 0, 0.06);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.06));
+
+  cursor: pointer;
+}
+
+.icon-modal-close-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 11px;
+  height: 11px;
+}
+
+.modal-btn-send {
+  position: absolute;
+  bottom: 32px;
+  left: 50%;
+  transform: translate(-50%, 0);
+
+  width: 106px;
+  height: 40px;
+  padding: 10px;
+
+  background-color: var(--bg-color);
+  border: 2px solid var(--extra-color);
+  border-radius: 30px;
+
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.5;
+
+  cursor: pointer;
+}
+
+.modal-btn-send:hover,
+.modal-btn-send:focus {
+  background-color: var(--accent-color);
+}
+
+/* ----------------main------------------- */
 
 /* -------hero----- */
 
@@ -161,11 +254,10 @@ ul {
   background-color: var(--second-bg-color);
 }
 
-
 .hero-img-box {
-  position: relative; 
+  position: relative;
   width: 580px;
-  height: 580px;   
+  height: 580px;
 }
 
 .hero-img {
@@ -216,21 +308,13 @@ ul {
 
 .about-img-box {
   position: relative;
+  content: "";
   width: 550px;
   height: 550px;
   margin-left: 100px;
 }
 
-.about-img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -65%);
-  width: 396px;
-  z-index: 1;
-}
-
-.about-img-box::before {
+.apple-bg {
   position: absolute;
   content: "";
   top: 50%;
@@ -240,10 +324,10 @@ ul {
   width: inherit;
   height: inherit;
   border: 26px solid var(--second-bg-color);
-  border-radius: 50%;  
+  border-radius: 50%;
 }
 
-.about-img-box::after {
+.apple-bg::before {
   position: absolute;
   content: "";
   top: 50%;
@@ -253,7 +337,15 @@ ul {
   width: inherit;
   height: inherit;
   border: 5px solid rgba(255, 255, 255, 0.5);
-  border-radius: 50%; 
+  border-radius: 50%;
+}
+
+.about-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -65%);
+  width: 396px;
 }
 
 .about-text {
@@ -331,9 +423,9 @@ ul {
 }
 
 .favorites-item {
-position: relative;
-width: 395px;
-height: 395px;
+  position: relative;
+  width: 395px;
+  height: 395px;
 }
 
 .favorites-item::after {
@@ -368,6 +460,11 @@ height: 395px;
   font-weight: 700;
   font-size: 42px;
   line-height: 1.16;
+  margin-bottom: 20px;
+}
+
+.reviews-text {
+  margin-bottom: 32px;
 }
 
 .reviews-list {
@@ -384,19 +481,18 @@ height: 395px;
   border-radius: 0 30px 30px 30px;
 }
 
+.stars-icon {
+  width: 101px;
+  height: 16px;
+  margin-bottom: 28px;
+}
+
 .item-review-text {
   font-weight: 700;
   font-size: 18px;
   line-height: 1.16;
 
-  margin-top: 8px;
   margin-bottom: 40px;
-}
-
-.stars-icon {
-  width: 101px;
-  height: 16px;
-  margin-bottom: 28px;
 }
 
 .reviews .item-title {
@@ -410,26 +506,34 @@ height: 395px;
   line-height: 1.5;
 }
 
-.reviews .item-icon {   
-  margin-left: 64px;
+.reviews .item-icon {
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
 
-.reviews .item-icon::before {  
-  display: inline-block;  
-  position: absolute;   
-  content: ""; 
+.reviews .item-icon::before {
+  display: inline-block;
+  content: "";
   width: 48px;
-  height: 48px;   
+  height: 48px;
   background-size: contain;
-  margin-left: -64px;  
 }
 
-.reviews .some1::before {
+.some1::before {
   background-image: url(../img/Sumith.jpg);
 }
 
-.reviews .some2::before {
+.some2::before {
   background-image: url(../img/Sumith2.jpg);
+}
+
+.item-icon::after {
+  display: inline-block;
+  content: "";
+  width: 2px;
+  height: 52px;
+  background-color: var(--extra-color);
 }
 
 /* -------subscribe----- */

@@ -40,7 +40,7 @@
             <li class="nav-item"><a class="link" href="#Menu">Menu</a></li>
             <li class="nav-item"><a class="link" href="#Contact">Contact</a></li>
           </ul>          
-          <button class="nav-btn btn" type="button">Order Now</button>          
+          <button class="nav-btn btn" type="button" data-modal-open>Order Now</button>          
         </div>
         </nav>
       </div>
@@ -64,7 +64,7 @@
             viverra ornare, eros dolor interdum nulla, ut commodo diam libero
             vitae erat.
           </p>
-          <button class="hero-btn btn" type="button">Order Now</button>
+          <button class="hero-btn btn" type="button" data-modal-open>Order Now</button>
           </div>
           <div class="hero-img-box">
             <img
@@ -83,6 +83,7 @@
       <section class="about">
         <div class="container about-flex">
           <div class="about-img-box">
+            <div class="apple-bg"></div>
             <img
             class="about-img"
             src="./img/aple.png"
@@ -194,8 +195,10 @@
                 questions asked”
               </p>
               <div class="item-icon some1">
-                <h3 class="item-title">Sumith Shah</h3>
-                <p class="item-text">Some Dude</p>
+                <div>
+                  <h3 class="item-title">Sumith Shah</h3>
+                  <p class="item-text">Some Dude</p>
+                </div>
               </div>
             </li>
             <li class="reviews-item">
@@ -208,8 +211,10 @@
                 this app”
               </p>
               <div class="item-icon some2">
-                <h3 class="item-title">Sumith Shah</h3>
-                <p class="item-text">Some Dude</p>
+                <div>
+                  <h3 class="item-title">Sumith Shah</h3>
+                  <p class="item-text">Some Dude</p>
+                </div>
               </div>
             </li>
           </ul>
@@ -274,5 +279,24 @@
         </div>
       </div>
     </footer>
+
+    <!-- modas -->
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <h2 class="modal-title">Order Form</h2>
+        <button class="modal-btn-close" type="button" data-modal-close>
+          <svg class="icon-modal-close-btn">
+            <use href="./img/icon.svg#icon-modal-close-btn"></use>
+          </svg>
+        </button>
+        <button class="modal-btn-send" type="button">Send</button>
+      </div>
+    </div>
+
+    <!-- scripts -->
+
+    <script src="./js/modal.js"></script>
+    
   </body>
 </html>
