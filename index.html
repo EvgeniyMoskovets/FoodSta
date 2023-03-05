@@ -18,6 +18,16 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
 
@@ -31,49 +41,75 @@
         /></a>
         <div class="nav-flex">
           <nav class="nav">
-          <ul class="nav-list list">
-            <li class="nav-item">
-              <a class="link current" href="./index.html">Home</a>
-            </li>
-            <li class="nav-item"><a class="link" href="#About">About</a></li>
-            <li class="nav-item"><a class="link" href="#Service">Service</a></li>
-            <li class="nav-item"><a class="link" href="#Menu">Menu</a></li>
-            <li class="nav-item"><a class="link" href="#Contact">Contact</a></li>
-          </ul>          
-          <button class="nav-btn btn" type="button" data-modal-open>Order Now</button>          
+            <ul class="nav-list list">
+              <li class="nav-item">
+                <a class="link current" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item"><a class="link" href="#About">About</a></li>
+              <li class="nav-item">
+                <a class="link" href="#Service">Service</a>
+              </li>
+              <li class="nav-item"><a class="link" href="#Menu">Menu</a></li>
+              <li class="nav-item">
+                <a class="link" href="#Contact">Contact</a>
+              </li>
+            </ul>
+            <button class="nav-btn btn" type="button" data-modal-open>
+              Order Now
+            </button>
+          </nav>
         </div>
-        </nav>
       </div>
     </header>
 
     <!--main-->
 
     <main class="main">
-
       <!-- hero -->
       <section class="hero">
         <div class="container hero-flex">
           <div class="hero-box-text">
             <h1 class="hero-title">
-            Enjoy Your Favorite <br />
-            Food From Anywhere
-          </h1>
-          <p class="hero-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            varius enim in eros elementum tristique. Duis cursus, mi quis
-            viverra ornare, eros dolor interdum nulla, ut commodo diam libero
-            vitae erat.
-          </p>
-          <button class="hero-btn btn" type="button" data-modal-open>Order Now</button>
+              Enjoy Your Favorite <br />
+              Food From Anywhere
+            </h1>
+            <p class="hero-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse varius enim in eros elementum tristique. Duis cursus,
+              mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam
+              libero vitae erat.
+            </p>
+            <button class="hero-btn btn" type="button" data-modal-open>
+              Order Now
+            </button>
           </div>
           <div class="hero-img-box">
-            <img
-            class="hero-img"
-            src="./img/meatballs.png"
-            alt="food"
-            width="608"
-            height="580"
-          />
+            <div class="single-item hero-img">
+              <div>
+                <img
+                  src="./img/meatballs.png"
+                  alt="food"
+                  width="528"
+                  height="528"
+                />
+              </div>
+              <div>
+                <img
+                  src="./img/cezar-salat.png"
+                  alt="food"
+                  width="528"
+                  height="528"
+                />
+              </div>
+              <div">
+                <img
+                  src="./img/egg-benedict.png"
+                  alt="food"
+                  width="528"
+                  height="528"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -82,54 +118,55 @@
 
       <section class="about">
         <div class="container about-flex">
+          <div class="about-bg"></div>
           <div class="about-img-box">
             <div class="apple-bg"></div>
             <img
-            class="about-img"
-            src="./img/aple.png"
-            alt="aple"
-            width="396"
-            height="502"
+              class="about-img"
+              src="./img/aple.png"
+              alt="aple"
+              width="396"
+              height="529"
             />
           </div>
           <div class="about-text-box">
             <h2 class="about-title" id="About">
-            What’s Special About Our Offerings
-          </h2>
-          <p class="about-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            varius enim in eros elementum tristique. Duis cursus, mi quis
-            viverra ornare, eros dolor interdum nulla, ut commodo diam libero
-            vitae erat.
-          </p>
-          <ul class="about-list list">
-            <li class="about-item">
-              <div class="about-item-icon">
-                <svg width="32px" hight="32px">
-                  <use href="./img/icon.svg#icon-roket"></use>
-                </svg>
-              </div>              
-              <h3 class="item-title">Fasest Delivery</h3>
-              <p class="item-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse varius enim in eros.
-              </p>              
-            </li>
-            <li class="about-item">
-              <div class="about-item-icon">
-                <svg width="32px" hight="32px">
-                  <use href="./img/icon.svg#icon-touch"></use>
-                </svg>
-              </div>
-              <h3 class="item-title">Easy To Order</h3>
-              <p class="item-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse varius enim in eros.
-              </p>
-            </li>
-          </ul>
-          <button class="about-btn btn" type="button">Order Now</button>
-          </div>          
+              What’s Special About Our Offerings
+            </h2>
+            <p class="about-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse varius enim in eros elementum tristique. Duis cursus,
+              mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam
+              libero vitae erat.
+            </p>
+            <ul class="about-list list">
+              <li class="about-item">
+                <div class="about-item-icon">
+                  <svg width="32px" hight="32px">
+                    <use href="./img/icon.svg#icon-roket"></use>
+                  </svg>
+                </div>
+                <h3 class="item-title">Fasest Delivery</h3>
+                <p class="item-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Suspendisse varius enim in eros.
+                </p>
+              </li>
+              <li class="about-item">
+                <div class="about-item-icon">
+                  <svg width="32px" hight="32px">
+                    <use href="./img/icon.svg#icon-touch"></use>
+                  </svg>
+                </div>
+                <h3 class="item-title">Easy To Order</h3>
+                <p class="item-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Suspendisse varius enim in eros.
+                </p>
+              </li>
+            </ul>
+            <button class="about-btn btn" type="button">Order Now</button>
+          </div>
         </div>
       </section>
 
@@ -180,6 +217,7 @@
 
       <section class="reviews">
         <div class="container">
+          <div class="reviews-bg"></div>
           <h2 class="reviews-title">What our Customers Say</h2>
           <p class="reviews-text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -227,11 +265,20 @@
         <div class="container subscribe-flex">
           <div class="subscrible-text-box">
             <h3 class="subscribe-title">Subscribe To Get Special Offers</h3>
-          <p class="subscribe-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            varius enim in eros elementum tristique.
-          </p>
-          <button class="subscribe-btn btn" type="button">Subscribe</button>
+            <p class="subscribe-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse varius enim in eros elementum tristique.
+            </p>
+            <form class="subscribe-form">
+              <input
+                class="subscribe-form-mail"
+                type="email"
+                placeholder="Enter your email"
+                name="mail"
+                required
+              />
+              <button class="subscribe-btn btn" type="submit">Subscribe</button>
+            </form>
           </div>
           <img class="subscribe-img" src="./img/banan.png" alt="banan" />
         </div>
@@ -242,38 +289,49 @@
 
     <footer class="footer">
       <div class="container">
+        <div class="footer-bg"></div>
         <div class="footer-main-flex">
           <div class="logo-nav">
             <a class="footer-logo" href="./index.html"
-             ><img src="./img/logo.svg" alt="logo" width="66" height="52"
-              /></a>
-          <ul class="footer-nav-list list">
-            <li class="nav-item"><a class="link" href="#">Home</a></li>
-            <li class="nav-item"><a class="link" href="#">About</a></li>
-            <li class="nav-item"><a class="link" href="#">Service</a></li>
-            <li class="nav-item"><a class="link" href="#">Menu</a></li>
-            <li class="nav-item"><a class="link" href="#">Contact</a></li>
-          </ul>
+              ><img src="./img/logo.svg" alt="logo" width="66" height="52"
+            /></a>
+            <ul class="footer-nav-list list">
+              <li class="nav-item"><a class="link" href="#">Home</a></li>
+              <li class="nav-item"><a class="link" href="#">About</a></li>
+              <li class="nav-item"><a class="link" href="#">Service</a></li>
+              <li class="nav-item"><a class="link" href="#">Menu</a></li>
+              <li class="nav-item"><a class="link" href="#">Contact</a></li>
+            </ul>
           </div>
-          <div>
+          <div class="footer-subscrible">
             <h2 class="footer-title">Subscribe</h2>
-          <button class="footer-btn btn" type="button">Subscribe</button>
-          <p class="footer-tetx">
-            By subscribing you agree to with our <a href="#">Privacy Policy</a>
-          </p>
+            <form>
+              <input
+                class="footer-form-mail"
+                type="email"
+                placeholder="Enter your email"
+                name="mail"
+                required
+              />
+              <button class="footer-btn btn" type="submit">Subscribe</button>
+            </form>
+            <p class="footer-tetx">
+              By subscribing you agree to with our
+              <a class="footer-item" href="#">Privacy Policy</a>
+            </p>
           </div>
         </div>
         <div class="footer-second-flex">
-          <ul class="footer-subscrible list">
-          <li class="footer-item">
-            <a class="link" href="#">Privacy Policy</a>
-          </li>
-          <li class="footer-item">
-            <a class="link" href="#">Terms of Service</a>
-          </li>
-          <li class="footer-item">
-            <a class="link" href="#">Cookies Settings</a>
-          </li>
+          <ul class="footer-ruls list">
+            <li class="footer-item">
+              <a class="link" href="#">Privacy Policy</a>
+            </li>
+            <li class="footer-item">
+              <a class="link" href="#">Terms of Service</a>
+            </li>
+            <li class="footer-item">
+              <a class="link" href="#">Cookies Settings</a>
+            </li>
           </ul>
           <p class="footer-tetx">2022 FoodSta. All right reserved.</p>
         </div>
@@ -290,13 +348,59 @@
             <use href="./img/icon.svg#icon-modal-close-btn"></use>
           </svg>
         </button>
-        <button class="modal-btn-send" type="button">Send</button>
+        <form class="modal-form">
+          <div class="modal-form-wrap">
+            <div>
+              <label class="modal-form-lable" for="name">Name</label>
+              <input
+                class="modal-form-input"
+                type="text"
+                name="name"
+                placeholder="Your name"
+                required
+              />
+            </div>
+            <div>
+              <label class="modal-form-lable" for="tel">Phone number</label>
+              <input
+                class="modal-form-input"
+                type="tel"
+                name="tel"
+                placeholder="+38(0_ _) _ _ _  _ _  _ _"
+                required
+              />
+            </div>
+            <div>
+              <label class="modal-form-lable" for="mail">E-mail</label>
+              <input
+                class="modal-form-input"
+                type="email"
+                name="mail"
+                placeholder="example@gmail.com"
+                required
+              />
+            </div>
+          </div>
+          <button class="modal-btn-send" type="submit">Send</button>
+        </form>
       </div>
     </div>
 
     <!-- scripts -->
 
     <script src="./js/modal.js"></script>
-    
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="./js/slic.js"></script>
   </body>
 </html>
